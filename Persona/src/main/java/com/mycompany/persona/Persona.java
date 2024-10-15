@@ -1,15 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.persona;
-/**
- *
- * @author Alumno
- */
+
 public class Persona {
-    String nombre, apellidos;
-    int edad;
+    
+    private String nombre, apellidos;
+    protected int edad;
     
     //Clase
     public Persona(String nombre, String apellidos, int edad){
@@ -40,10 +34,4 @@ public class Persona {
         System.out.println( this.nombre + " esta durmiendo...");
     }
     
-    public static void main(String[] args) {
-        Persona Nicka = new Persona("Santiago", "Lizarraga Luqin", 15);
-        System.out.println("Nombre: " + Nicka.getNombre() + "\nApellidos: " + Nicka.getApellidos() + "\nEdad: " + Nicka.getEdad());
-        Nicka.camina();
-        Nicka.duerme();
-    }
 }
